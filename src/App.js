@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import Body from './Componenets/Body';
 
 function App() {
