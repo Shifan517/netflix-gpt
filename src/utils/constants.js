@@ -3,7 +3,7 @@ export const LOGO =
 export const netflixBG =
   "https://assets.nflxext.com/ffe/siteui/vlv3/258d0f77-2241-4282-b613-8354a7675d1a/web/IN-en-20250721-TRIFECTA-perspective_cadc8408-df6e-4313-a05d-daa9dcac139f_large.jpg";
 export const netflixSmiley =
-  "https://wallpapers.com/images/high/netflix-profile-pictures-1000-x-1000-qo9h82134t9nv0j0.webp";
+  "https://wallpapers.com/images/hd/netflix-profile-pictures-1000-x-1000-qo9h82134t9nv0j0.jpg";
 export const profile =
   "https://sb.kaleidousercontent.com/67418/1920x1281/0e9f02a048/christian-buehner-ditylc26zvi-unsplash.jpg";
 export const API_OPTIONS = {
@@ -14,3 +14,11 @@ export const API_OPTIONS = {
       "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJjZTlmM2IwZWY0MTdiZjZmNjVhOWJmZTFmYjJjYTA0MiIsIm5iZiI6MTc1NDc1NDcxNC4zNjQsInN1YiI6IjY4OTc2ZTlhODBmNWQwZWZjZWI2ZjhlZiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.KCfvguccUddlBmBhK3bRnZR09IYXvtwN_kPmhcDkwGo",
   },
 };
+
+export const Poster_img ="https://image.tmdb.org/t/p/w500/"
+
+export const SUPPORTED_LANGUAGE = [
+  {identifier:"en",name:"English"},
+  {identifier:"hindi",name:"Hindi"},
+  {identifier:"spanish",name:"spanish"}
+]

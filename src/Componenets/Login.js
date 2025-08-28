@@ -31,8 +31,7 @@ const Login = () => {
   }, [isSignInForm]);
 
   const handleClick = () => {
-    console.log(email.current.value);
-    console.log(password.current.value);
+    
     const message = Validate(email.current.value, password.current.value);
     console.log(message);
     setErrorMessage(message);
@@ -84,10 +83,10 @@ const Login = () => {
         .then((userCredential) => {
           // Signed in
           const user = userCredential.user;
-          console.log(user);
+         
         })
         .catch((error) => {
-          console.log("SignUp Error", error);
+          
           const errorCode = error.code;
           const errorMessage = error.message;
           setErrorMessage(errorCode + "-" + errorMessage);

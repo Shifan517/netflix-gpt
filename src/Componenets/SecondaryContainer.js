@@ -1,11 +1,25 @@
-import React from 'react'
+import React from "react";
+import MovieCard from "./MovieCard";
+import MovieList from "./MovieList";
+import { useSelector } from "react-redux";
 
 const SecondaryContainer = () => {
+  const movies = useSelector((store) => store.movies);
+  console.log(movies);
+
   return (
-    <div>Secondary Five years after the events of Jurassic World Dominion, covert operations expert Zora Bennett is contracted to lead a skilled team on a top-secret mission to secure genetic material from the world's three most massive dinosaurs. When Zora's operation intersects with a civilian family whose boating expedition was capsized, they all find themselves stranded on an island where they come face-to-face with a sinister, shocking discovery that's been hidden from the world for decades.
+    movies.nowPlayingMovies && (
+      <div className=" bg-black">
+        <div className="-mt-64 relative z-20  ">
+          <MovieList title={"Now Playing"} movies={movies.nowPlayingMovies} />
+          <MovieList title={"Popular"} movies={movies.popularMovies} />
+          <MovieList title={"Trending"} movies={movies.nowPlayingMovies} />
+          <MovieList title={"Top List"} movies={movies.nowPlayingMovies} />
+          <MovieList title={"Now Playing"} movies={movies.nowPlayingMovies} />
+        </div>
+      </div>
+    )
+  );
+};
 
-▶ PlayMore Info</div>
-  )
-}
-
-export default SecondaryContainer
+export default SecondaryContainer;
